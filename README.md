@@ -2,6 +2,8 @@
 
 This implements a spam detection system using the Bag of Words model and Naive Bayes classification. It processes text messages and classifies them as either spam or real (ham) messages.
 
+![image](https://github.com/user-attachments/assets/ffb5b76f-c79a-4347-9967-a09e524fdfbc)
+
 ## Requirements
 
 ```
@@ -18,7 +20,7 @@ wordcloud
 1. Clone this repository:
 
 ```bash
-git clone
+git clone https://github.com/digitalRM/bag-of-words-spam-model.git
 cd bag-of-words-spam-model
 ```
 
@@ -35,30 +37,14 @@ import nltk
 nltk.download('stopwords')
 ```
 
-## Usage
-
-1. Ensure your spam dataset (spam.csv) is in the project root directory
-2. Run the spam_detection.py script:
-
-```bash
-python spam_detection.py
-```
-
-The script will:
-
-- Load and preprocess the dataset
-- Create a Bag of Words model
-- Train a Naive Bayes classifier
-- Display a word cloud of common spam words
-- Show the model's accuracy and confusion matrix
-- Provide a function to predict if new messages are spam
-
 ## Dataset Format
 
 The dataset should be a CSV file with the following columns:
 
 - v1: Label column (spam/ham)
 - v2: Text message content
+
+Data can be found [here.](https://github.com/nikitaa30/Spam-Filtering-techniques/blob/master/dataset%20for%20bag%20of%20words/spam.csv)
 
 ## Example Usage
 
